@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Spotify Album JSON → CSV</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        padding: 2rem;
+        max-width: 640px;
+        margin: auto;
+      }
+      input {
+        margin-top: 1rem;
+      }
+      .status {
+        margin-top: 1rem;
+        font-size: 0.9rem;
+      }
+      .error {
+        color: #b00020;
+      }
+      .success {
+        color: #0a7a0a;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Spotify Album JSON → CSV</h1>
+    <p>Select your exported Spotify album JSON file (YourLibrary.json).</p>
+
+    <input type="file" accept=".json" />
+
+    <div class="status" id="status"></div>
+
+    <script src="./parseData.js"></script>
+  </body>
+</html>
